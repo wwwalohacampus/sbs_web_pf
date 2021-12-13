@@ -40,13 +40,19 @@ $(function(){
 $(function(){
     $('header .open').on('click', function(){
         $('body').css({'overflow':'hidden'});
-        $('header .bg').css({'display': 'block'});
+        // $('header .bg').css({'display': 'block'});
+        $('header .bg').fadeIn();
         $('header nav').addClass('on');
+        $('header nav').css({ 'width': '300px'})
+
     });
+
     $('header .close, header .bg').on('click', function(){
         $('body').css({'overflow':'auto'});
-        $('header .bg').css({'display':'none'});
+        // $('header .bg').css({'display':'none'});
+        $('header .bg').fadeOut();
         $('header nav').removeClass('on');
+        $('header nav').css({ 'width': '0'})
     });
 });
 
