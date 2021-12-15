@@ -192,7 +192,7 @@ br.mo {display: none;}
 /*반응형 시작*/
 /*테블릿모드 : 1100px이하~ 951px*/
 @media screen and (max-width:1100px){
-    .wrap {min-width: 100%;}
+    .wrap {min-width: 100%;} 
     
     /*header*/
     header {height: 60px; line-height: 60px;padding:0 10px;}
