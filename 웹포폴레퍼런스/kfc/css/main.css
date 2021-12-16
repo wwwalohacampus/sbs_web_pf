@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+
+
+/* header */
+header { 
+    width: 100%; 
+    height: 140px; 
+    line-height: 50px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    background-color:#fff;
+    overflow: hidden;
+}
+
+header .item {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    display: block;
+    float: left;
+    width: 6.583333rem;
+    height: 6.166667rem;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+header .logo.on {
+    background-position-y: 156%;
+    margin-top: 45px;
+    height: 67px;
+}
+
+
+header a.logo img {
+    padding: 20px;
+    padding-left: 15%;
+
+}
+
+header nav {
+    float: right;
+    padding: 20px;
+    margin-right:28%;
+}
+
+header nav .gnb {}
+
+header nav .gnb li { 
+    display: inline-block; padding: 7px; font-size: 13px;
+    opacity: 0.8; 
+    right: 50px;
+    margin: 0 4px;
+}
+
+header nav .gnb li a {   
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+}
+
+header nav .gnb .bascket {
+    width: 2.5rem;
+    height: 2rem;
+    display: inline-block;
+    overflow: hidden;
+    background-image: url(../img/spr_basket.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-position-x: 0;
+    background-position-y: 132%;  /* -1% 회색 */
+}
+
+header nav .gnb .bascket span {
+    margin-left: 13px;
+    font-size: 1rem;
+    line-height: 10px;
+    font-weight: 700;
+    vertical-align: top;
+    line-height: 22px;
+    color: #fff;
+}
+
+header nav .gnb li a p:after { 
+    content: '';
+    width: 1px;
+    height: 10px;
+    background: #ccc;
+    position: absolute;
+    top:47px;
+    margin-left: 13px;
+}
+
+header nav .gnb img {
+    position: absolute;
+    margin-top: -2%;
+    margin-right: 10px;
+}
+
+header .catagory {
+float: right;
+margin-top: -5%;
+margin-right: 27%;
+}
+    
+header .catagory li { 
+    font-weight: bold;
+    display: inline-block;  font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    right: 50px;
+    padding: 0 30px;
+    }
+
+    header nav .gnb img.logo1 {
+        right: 12%;
+    }
+
+    header nav .gnb img.logo2 {
+        right: 12%;
+        bottom: 20%;
+    }
+
+    section.visual {
+        height: 800px;
+        background-color: #2c251e;
+    }
+
+   
+
+ 
