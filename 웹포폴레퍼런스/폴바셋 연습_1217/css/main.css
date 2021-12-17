@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: top;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+
+/* layout */
+body{
+    font-family: 'Noto-Sans', sans-serif;
+}
+/* header */
+#headerWrap{
+    width: 100%;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+header{position: relative;}
+/* logo */
+header h1{
+    position: absolute;
+    left: 20px;
+    width: 150px;
+    height: 76px;
+    top: 20px;
+}
+header h1 a{
+    position: absolute;
+    width: 150px;
+    height: 76px;
+    background: url(../images/common/logo.png)no-repeat center;
+    display: block;
+}
+
+#gnb{
+    width: 100%;
+    
+}
+#gnb a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #fff;
+    margin-top: 30px;
+}
+#gnb ul{
+    width: 1003px;
+    margin: 0 auto;
+
+}
+#gnb ul li{
+    float: left;
+    height: 45px;
+    width: 165px;
+    text-align: left;
+    padding: 35px 0;
+}
+#gnb ul li a{
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+#gnb .submenu{
+    float: left;
+    height: 270px;
+    width: 100%;
+    display: none;
+}
+#gnb .submenu li{
+    width: 165px;
+    float: left;
+}
+#gnb .submenu li a{
+    font-size: 13px;
+    letter-spacing: -0.1px;
+}
+#gnbBar{
+    position: absolute;
+    display: inline;
+    background: #e0004d;
+    width: 0px;
+    height: 4px;
+    top: 104px;
+    left: 400px;
+}
+#loginWrap{
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+#login{margin-bottom: 10px;}
+#login li{
+    display: inline-block;
+    margin-left: 20px;
+}
+#login li a{
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: rgba(255,255,255,0.7);
+}
+#new{
+    position: absolute;
+    right: 0;
+}
+#new li{
+    display: inline-block;   
+   margin-left: 15px;
+
+}
+#new li:before{
+    content: '';
+    display: block;
+    clear: both;
+    background: url(../images/common/topMenuIcon.png)no-repeat;
+    width: 12px;
+    height: 10px;
+}
+#new .bean:before{
+    background-position-x: -10px !important;
+}
+#new li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #f0dec8;
+    font-size: 12px;
+}
+
+
+section#visual {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: green;
+    z-index: -1;
+}
+section#visual .swiper-slide img { width: 100%; }
