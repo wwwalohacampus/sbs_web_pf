@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0416</title>
+    <!-- css -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://www.goe416.go.kr/inc/css/reset.css">
+    <link rel="stylesheet" href="https://www.goe416.go.kr/inc/css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header mainH">
+        <div class="in">
+            <!-- logo -->
+            <h1 class="logo">
+                <a href="#"></a>
+            </h1>
+            <!-- gnb -->
+            <nav class="header-gnb">
+                <ul>
+                    <li><a href="#"><span>교육과정</span></a>
+                        <ul class="gnb-sub">
+                            <li><a href="#"><span>교육과정안내</span></a></li>
+                            <li><a href="#"><span>교육프로그램</span></a></li>
+                            <li><a href="#"><span>교육신청</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>기록과 기억</span></a>
+                        <ul class="gnb-sub">
+                            <li><a href="#"><span>온라인 기억교실</span></a></li>
+                            <li><a href="#"><span>기억교실 방문</span></a></li>
+                            <li><a href="#"><span>기억노트</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>소식과 자료</span></a>
+                        <ul class="gnb-sub">
+                            <li><a href="#"><span>웹진 바람대로</span></a></li>
+                            <li><a href="#"><span>공지사항</span></a></li>
+                            <li><a href="#"><span>자료실</span></a></li>
+                            <li><a href="#"><span>정보공개</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>교육원 소개</span></a>
+                        <ul class="gnb-sub">
+                            <li><a href="#"><span>인사말</span></a></li>
+                            <li><a href="#"><span>설립과정</span></a></li>
+                            <li><a href="#"><span>운영방향</span></a></li>
+                            <li><a href="#"><span>교육원 BI</span></a></li>
+                            <li><a href="#"><span>조직 및 업무</span></a></li>
+                            <li><a href="#"><span>시설안내</span></a></li>
+                            <li><a href="#"><span>찾아오시는길</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- util -->
+            <div class="header-util">
+                <div class="header-size">
+                    <button type="button" id="small"></button>
+                    <i class="xi-minus-thin"></i>
+                    <span>가</span>
+                    <button type="button" id="big"></button>
+                    <i class="xi-plus-thin"></i>
+                </div>
+                <ul class="header-lang">
+                    <li><a href="#">KOR</a></li>
+                    <li><a href="#">ENG</a></li>
+                </ul>
+                <button class="search"><img src="img/magnifying-glass-solid.svg" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <!-- full01 -->
+    <div id="fullpage" data-anchor="full1">
+        <div class="section full01">
+            <div class="home">
+                <a href="#">교육신청 바로가기</a>
+            </div>
+            <div class="in">
+                <div class="text">
+                    <p>
+                        참사의 아픔을 공감하고 기억하는 문화를 확산하고<br />
+                        참여와 연대로 실천하는 민주시민교육으로 <br />
+                        희망을 함께 그리며 나아가는 경기도교육청 직속기관입니다.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="video">
+                        <video autoplay muted loop playsinline id="main-video" preload="metadata" class=""
+                            poster="https://www.goe416.go.kr/inc/video/main-video-3_Moment.png">
+                            <source src="https://www.goe416.go.kr/inc/video/main-video-3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- full02 -->
+        <div class="section full02">
+            <div class="in">
+                <div class="inner">
+                    <div class="memory-txt">
+                        <h2>기록과 기억</h2>
+                        <p>세월호 참사와 참사로 희생된 이들의 꿈을 기억하고,<br />
+                            기억과 기록의 가치에 대해 함께 생각합니다.</p>
+                        <a href="#">
+                            <p>더보기<i class="xi-arrow-right"></i></p>
+                        </a>
+                    </div>
+
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><a href="#">
+                                    <div class="slide-img">
+                                        <img src="https://www.goe416.go.kr/inc/img/main/main-memory-1.jpg" alt="">
+                                    </div>
+                                    <div class="slide-txt">
+                                        <strong>기억교실은 365일 개방중입니다.</strong>
+                                        <p>평일 9시 ~ 18시 / 주말 10시 ~ 17시</p>
+                                        <span class="btn-vit">방문예약하기</span>
+                                    </div>
+                                </a></div>
+                            <div class="swiper-slide">
+                                <div class="slide-img">
+                                    <img src="https://www.goe416.go.kr/inc/img/main/main-memory-2.jpg" alt="">
+                                </div>
+                                <div class="slide-txt">
+                                    <strong>온라인 기억교실</strong>
+                                    <p>끝까지 기억하겠습니다.</p>
+                                </div>
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide-img">
+                                    <img src="https://www.goe416.go.kr/inc/img/main/main-memory-3.jpg" alt="">
+                                </div>
+                                <div class="slide-txt">
+                                    <strong>기억노트</strong>
+                                    <p>우리의 다짐과 그리움의 편지가 너에게 닿기를</p>
+                                </div>
+                                </a>
+                            </div>
+
+
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- full03 -->
+        <div class="section full03">
+            <!-- Slider main container -->
+            <div class="full03-slide">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><a href="#">
+                            <span>종료</span>
+                            <div class="slide-img">
+                                <img src="https://www.goe416.go.kr/_File/eduProgram/listImgFile_1635397152_0.jpg"
+                                    alt="">
+                            </div>
+                            <div class="slide-txt">
+                                <strong>타일 벽화 필셀 모아 꿈틀</strong>
+                                <p>2021. 10. 04 ~ 10. 19 </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide"><a href="#">
+                            <span>종료</span>
+                            <div class="slide-img">
+                                <img src="https://www.goe416.go.kr/_File/eduProgram/listImgFile_1635396772_0.jpg"
+                                    alt="">
+                            </div>
+                            <div class="slide-txt">
+                                <strong>대·나·무(대화로 나눌 수 있어, 무슨 갈등이든지!)</strong>
+                                <p>2021. 10. 25 ~ 11. 01 </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide"><a href="#">
+                            <span>종료</span>
+                            <div class="slide-img">
+                                <img src="https://www.goe416.go.kr/_File/eduProgram/listImgFile_1635396643_0.jpg"
+                                    alt="">
+                            </div>
+                            <div class="slide-txt">
+                                <strong>글로공감</strong>
+                                <p>2021. 10. 25 ~ 11. 01 </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide"><a href="#">
+                            <span>종료</span>
+                            <div class="slide-img">
+                                <img src="https://www.goe416.go.kr/_File/eduProgram/listImgFile_1635396483_0.jpg"
+                                    alt="">
+                            </div>
+                            <div class="slide-txt">
+                                <strong>사·발·로(사회문제 발견의 길로)</strong>
+                                <p>2021. 10. 25 ~ 11. 01 </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide"><a href="#">
+                            <span>종료</span>
+                            <div class="slide-img">
+                                <img src="https://www.goe416.go.kr/_File/eduProgram/listImgFile_1635395541_0.jpg"
+                                    alt="">
+                            </div>
+                            <div class="slide-txt">
+                                <strong>오늘의 시민</strong>
+                                <p>2021. 10. 25 ~ 11. 01 </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide"><a href="#">
+                            <span>종료</span>
+                            <div class="slide-img">
+                                <img src="https://www.goe416.go.kr/_File/eduProgram/listImgFile_1635389202_0.jpg"
+                                    alt="">
+                            </div>
+                            <div class="slide-txt">
+                                <strong>기본권을 아는 것이 기본</strong>
+                                <p>2021. 10. 25 ~ 11. 01</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+            <div class="in">
+            <div class="title-txt">
+                <h2>교육프로그램</h2>
+                <p>민주사회를 만들기 위한 교육에 참여해보세요.</p>
+                <a href="#">
+                    <p>더보기<i class="xi-arrow-right"></i></p>
+                </a>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="section full04">section04</div>
+        <div class="section full05">section05</div>
+        <div class="section footer">footer</div>
+    </div>
+
+
+
+</body>
+
+</html>

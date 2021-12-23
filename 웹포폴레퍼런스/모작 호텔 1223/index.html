@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모작호텔</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fullPage.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/examples.css" /> -->
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="js/fullPage.js"></script>
+    <script src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+<body>
+        <!-- 헤더(픽스드) -->
+        <header id="header">
+            <div class="inner">
+                <div class="hRight">
+                    <div class="open">
+                        <img src="img/btn_menu.png" alt="">
+                    </div>
+                    <div class="search"><a href="">호텔찾기</a></div>
+                    <div class="lang">
+                        <a class="ko" href="#">KR</a>
+                        <a class="en" href="#">EN</a>
+                    </div>
+                </div>
+            
+                <div class="logo"><a href="#">JOSUN HOTELS <span>&</span> RESORT</a></div>
+
+                <div class="hLeft">
+                    <ul class="menu">
+                        <li class="login"><a href="#">로그인</a></li>
+                        <li class="join"><a href="#">회원가입</a></li>
+                        <li class="reservationCheck"><a href="#">예약확인</a></li>
+                        
+                        <li class="reList"><a href="#">RESERVATION</a>
+                            <ul>
+                                <li class="reList2"><a href="#">ROOM</a></li>
+                                <li class="reList3"><a href="#">DINNG</a></li>
+                                <li class="reList4"><a href="#">MEMBERSHIP</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ****************************** 헤더의 햄버거 버튼 누르면 뜨는 화면 -->
+        <div class="allMenu">
+            <div class="xbtn">
+                <img src="img/btn_close_white_25x25.png" alt="">
+            </div>
+            <ul class="menu">
+                <li class="menuTitle">about us
+                    <ul class="menu-1">
+                        <li>JOSUN HOTELS & RESORTS
+                            <a href="#">기업소개</a>
+                            <a href="#">연혁</a>
+                            <a href="#">수상내역</a>
+                            <a href="#">결산공고</a>
+                            <a href="#">오시는길</a>
+                        </li>
+                        <li>NEWS
+                            <a href="#">주요소식</a>
+                            <a href="#">주요활동</a>
+                            <a href="#">소셜 미디어</a>
+                        </li>
+                        <li>RECRUIT</li>
+                    </ul>
+                </li>
+
+                <li class="menuTitle">hotels
+                    <ul class="menu-2">
+                        <li>조선 팰리스</li>
+                        <li>웨스틴 조선 서울</li>
+                        <li>웨스틴 조선 부산</li>
+                        <li>그랜드 조선 부산</li>
+                        <li>그랜드 조선 제주</li>
+                        <li>레스케이프 호텔</li>
+                        <li>그래비티 서울 판교</li>
+                        <li>포포인츠 바이 쉐라톤 조선 서울역</li>
+                        <li>포포인츠 바이 쉐라톤 조선, 서울 명동</li>
+                        <li>파라스파라 서울</li>
+                    </ul>
+                </li>
+                <li class="menuTitle">offers
+                    <ul class="menu-3">
+                        <li>package</li>
+                        <li>event</li>
+                        <li>dear my anne</li>
+                    </ul>
+                </li>
+                <li class="menuTitle">membership
+                    <ul class="menu-4">
+                        <li>club josun</li>
+                        <li>event</li>
+                        <li>news</li>
+                    </ul>
+                </li>
+                <li class="menuTitle">my page
+                    <ul class="menu-5">
+                        <li>my page</li>
+                        <li>my point</li>
+                        <li>my coupon</li>
+                        <li>멤버십확인</li>
+                        <li>예약화인</li>
+                        <li>관심리스트</li>
+                        <li>개인정보관리</li>
+                    </ul>
+                </li>
+                <li class="menuTitle">retail business
+                    <ul class="menu-6">
+                        <li>restaurants
+                            <a href="#">호무랑</a>
+                            <a href="#">호경전</a>
+                            <a href="#">자주 테이블</a>
+                            <a href="#">MOTT 32 SEOUL</a>
+                        </li>
+                        <li>product
+                            <a href="#">조선호텔 김치</a>
+                            <a href="#">제인패커</a>
+                            <a href="#">격물공부</a>
+                        </li>
+                        <li>OFFICE MANAGEMENT SERVICES
+                            <a href="#">스테이트 타워</a>
+                            <a href="#">센터필드</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menuTitle">customer service
+                    <ul class="menu-7">
+                        <li>q&a</li>
+                        <li>faq</li>
+                        <li>gift card</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </header>
+        
+
+        <!-- 풀페이지 -->
+        <div id="fullpage">
+
+
+    <!-- *********************************첫번째 화면******************* -->
+            <div class="section active" id="section0">
+                <h1 class="mainText"><span>E</span>xperience the <span>D</span>ifference</h1>
+                
+                <div class="chkInout">
+                    <div class="promotion"><button>+ 프로모션 코드</button></div>
+                    <div class="select">
+                        <div class="selection reservation2">
+                            <button class="buttonS">
+                            <p>reservation</p>
+                            ROOM <div class="arrow"></div></button>
+                        </div>
+
+                        <div class="selection hotel">
+                            <button class="buttonS">
+                            <p>Hotel</p>
+                            그랜드 조선 제주</button>
+                        </div>
+
+                        <div class="selection check">
+                            <button class="buttonS">
+                            <p>CHECK IN/OUT</p>
+                            시간이 나오는 곳 <div></div>
+                        </div>
+
+                        <div class="selection roompnpeople">
+                            <button class="buttonS">
+                            <p class="roomtype"><span>ROOM</span><span>ADULT</span><span>CHILDREN</span></p>
+                            <div class="pptype"><span>1</span><span>1</span><span>0</span></div>
+                            </button>
+                        </div>
+                        <button class="search">SEARCH</button>
+                    </div>
+                </div>
+            </div>
+
+<!-- *******************************두번째 스크롤 시작************************* -->
+            <div class="section" id="section1">
+
+                <div class="offer">
+                    <div class="goto"><a href="#">GO TO OFFERS<div></div></a></div>
+                    <div class="offers">
+                        <div class="postButton">
+                            <div class="arrowL"><img src="../img/btn_swipe_66x66.png" alt=""></div>
+                            <div class="arrowR"><img src="../img/btn_swipe_66x66.png" alt=""></div>
+                        </div>
+                        <div class="postContainer">
+                            <div class="postInner">
+                                <div class="offerpost1 post">
+                                    <div class="post-img">
+                                        <div class=""><a href="#">자세히 보기</a></div>
+                                        <img src="img/겨울패키지 Dear My Anne_680 x 470.jpg" alt="">
+                                    </div>
+                                    <div class="title"><p><span>웨스틴 조선 서울역</span> X DEAR MY ANNE</p></div>
+                                    <div class="txt"><p>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</p></div>
+                                    <div class="date"><p>2021.11.11-2022.02.28</p></div>
+                                    <div class="name"><span>웨스틴 조선 서울</span></div>
+                                </div>
+                                <div class="offerpost2 post">
+                                    <div class="post-img"><div class=""><a href="#">자세히 보기</a></div><img src="img/썸넬_저작권.jpg" alt=""></div>
+                                    <div class="title"><p><span>웨스틴 조선 서울역</span> X DEAR MY ANNE</p></div>
+                                    <div class="txt"><p>추운 겨울을 녹여줄 사랑스러운 '앤 Anne'이 전하는 따듯한 이야기</p></div>
+                                    <div class="date"><p>2021.11.11-2022.02.28</p></div>
+                                    <div class="name"><span>웨스틴 조선 부산</span></div>
+                                </div>
+                                <div class="offerpost3 post">
+                                    <div class="post-img"><div class=""><a href="#">자세히 보기</a></div><img src="img/FPM_680x470.jpg" alt=""></div>
+                                    <div class="title"><p><span>웨스틴 조선 서울역</span> X DEAR MY ANNE</p></div>
+                                    <div class="txt"><p>추운 겨울을 녹여줄 사랑스러운 '앤 Anne'이 전하는 따듯한 이야기</p></div>
+                                    <div class="date"><p>2021.11.11-2022.02.28</p></div>
+                                    <div class="name"><span>포포인츠 바이 쉐라톤 조선, 서울 명동</span></div>
+                                </div>                            
+                                <div class="offerpost4 post">
+                                    <div class="post-img"><div class=""><a href="#">자세히 보기</ap></div><img src="img/FPS_680x470.jpg" alt=""></div>
+                                    <div class="title"><p><span>웨스틴 조선 서울역</span> X DEAR MY ANNE</p></div>
+                                    <div class="txt"><p>추운 겨울을 녹여줄 사랑스러운 '앤 Anne'이 전하는 따듯한 이야기</p></div>
+                                    <div class="date"><p>2021.11.11-2022.02.28</p></div>
+                                    <div class="name"><span>포포인츠 바이 쉐라톤 조선 서울역</span></div>
+                                </div>
+                                <div class="offerpost5 post">
+                                    <div class="post-img">
+                                        <div class=""><a href="#">자세히 보기</a></div>
+                                        <img src="img/Trip To Pangyo._썸네일2jpg.jpg" alt="">
+                                    </div>
+                                    <div class="title"><p>TRIP TO PANGYO : KIDS</p></div>
+                                    <div class="txt"><p>추운 겨울을 녹여줄 사랑스러운 '앤 Anne'이 전하는 따듯한 이야기</p></div>
+                                    <div class="date"><p>2021.11.11-2022.02.28</p></div>
+                                    <div class="name"><span>그래비티 서울 판교</span></div>
+                                </div>
+                                <div class="offerpost6 post">
+                                    <div class="post-img"><div class=""><a href="#">자세히 보기</a></div><img src="img/패키지 섬네일(680x470).jpg" alt=""></div>
+                                    <div class="title"><p>CLAMPING SUITE :SEOULITE</p></div>
+                                    <div class="txt"><p>추운 겨울을 녹여줄 사랑스러운 '앤 Anne'이 전하는 따듯한 이야기</p></div>
+                                    <div class="date"><p>2021.11.11-2022.02.28</p></div>
+                                    <div class="name"><span>레스케이프</span></div>
+                                </div>
+                                <div class="offerpost7 post">
+                                    <div class="post-img"><div class=""><a href="#">자세히 보기</a></div><img src="img/680 470 Nice J Shot! 1_ 톤 2.jpg" alt=""></div>
+                                    <div class="title"><p>INCE J SHOT!</p></div>
+                                    <div class="txt"><p>추운 겨울을 녹여줄 사랑스러운 '앤 Anne'이 전하는 따듯한 이야기</p></div>
+                                    <div class="date"><p>2021.11.11-2022.02.28</p></div>
+                                    <div class="name"><span>웨스틴 조선 서울</span></div>
+                                </div>
+                                <div class="offerpost8 post">
+                                    <div class="post-img"><div class=""><a href="#">자세히 보기</a></div><img src="img/멍캉스 설이_680x470.jpg" alt=""></div>
+                                    <div class="title"><p>멍캉스</p></div>
+                                    <div class="txt"><p>추운 겨울을 녹여줄 사랑스러운 '앤 Anne'이 전하는 따듯한 이야기</p></div>
+                                    <div class="date"><p>2021.11.11-2022.02.28</p></div>
+                                    <div class="name"><span>그랜드 조선 부산</span></div>
+                                </div> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+<!-- *******************************세번째 스크롤 시작************************* -->            
+            
+            <div class="section" id="section2">
+                
+                <div class="slideDown">
+                    <h1><span>C</span>LUB <span>J</span>OSUN</h1>
+                    <p>품격 있는 서비스와 다채로운 라이프 스타일을 선사하는<br>
+                        조선호텔앤리조트의 통합 멤버십 프로그램, 클럽조선(CLUB JOSUN)<br>
+                        지금 회원만을 위한 특별한 혜택과 경험을 확인해보세요.</p>
+                    <div class="clubBtn">
+                        <a class="view" href="#">VIEW MORE & JOIN</a>
+                        <a class="event" href="#">MEMBER'S EVENT</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+<!-- *******************************네번째 스크롤 슬라이드 1 시작************************* -->  
+
+
+            <div class="section" id="section3">
+                <div class="slide slide1 active">
+                    
+                    <div class="brandBox">
+                        <h1 class="boxtitle">Meet Our Hotel</h1>
+                        <p class="subtitle">HERITAGE LEADS TO ONE FOR ALL</p>
+                    
+                    <div class="brandList">
+                        <div class="brand1"><a href="#" class=""></a></div>
+                        <div class="brand2"><a href="#" class=""></a></div>
+                        <div class="brand3"><a href="#" class=""></a></div>
+                        <div class="brand4"><a href="#" class=""></a></div>
+                        <div class="brand5"><a href="#" class=""></a></div><br>
+                        <div class="brand6"><a href="#" class=""></a></div>
+                        <div class="brand7"><a href="#" class=""></a></div>
+                        <div class="brand8"><a href="#" class=""></a></div>
+                        <div class="brand9"><a href="#" class=""></a></div>
+                    </div>
+                    </div>
+
+                </div>
+
+
+<!-- *******************************네번째 스크롤 슬라이드 2 시작************************* -->  
+
+
+                <div class="slide slide2 ">
+                    <div class="txtBox">
+                        <div class="inner">
+                            <h1 class="txtTitle">Meet Our Hotel</h1>
+                            <h2 class="txtSubtitle">HERITAGE LEADS TO ONE FOR ALL</h2>
+                            <p class="mainTxt">어디서나 한결같이 품격있는 서비스와 시설로<br>
+                                고객에게 깊은 감동을 주는 호텔</p>    
+                            <p class="subTxt">균형있는 라이프스타일을 추구하며 품격의 가치를 아는 고객을 위해<br>
+                                세련되고 모던한 감각을 지닌 안락한 객실과 세심한 배려가 묻어나는 서비스를 준비합니다.<br>
+                                조선호텔앤리조트에서 품격 있는 휴식을 즐기실 수 있습니다.</p>
+                            <div class="Btn">
+                                <a class="view2" href="#">VIEW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chkInout">
+                    <div class="promotion"><button>+ 프로모션 코드</button></div>
+                    <div class="select">
+                        <div class="selection reservation2">
+                            <button class="buttonS">
+                                <p>reservation</p>
+                                ROOM <div></div></button>
+                        </div>
+    
+                        <div class="selection hotel">
+                            <button class="buttonS">
+                            <p>Hotel</p>
+                            그랜드 조선 제주</button>
+                        </div>
+                        <div class="selection check">
+                            <button class="buttonS">
+                            <p>CHECK IN/OUT</p>
+                            시간이 나오는 곳 <div></div>
+                        </div>
+
+                        <div class="selection roompnpeople">
+                            <button class="buttonS">
+                            <p class="roomtype"><span>ROOM</span><span>ADULT</span><span>CHILDREN</span></p>
+                            <div class="pptype"><span>1</span><span>1</span><span>0</span></div>
+                            </button>
+                        </div>
+                        <button class="search">SEARCH</button>                        </div>
+                    </div>
+            </div>
+
+
+
+<!-- *******************************다섯번째 슬라이드 시작************************* -->  
+
+
+            <div class="section" id="section4">
+                <div class="retailBusiness">
+                    <h1 class="mainTxt">Retail Business</h1>
+                    <p class="subTxt">조선호텔앤리조트의 라이프 스타일 브랜드<br>
+                        호스피탈리티 전문성을 바탕으로 확장한 라이프 스타일 브랜드를 소개합니다.</p>
+                    <div class="container">
+                        <div class="business1"><div class=""></div><a href="#">자세히 보기</a></div>
+                        <div class="business2"><div class=""></div><a href="#">자세히 보기</a></div>
+                        <div class="business3"><div class=""></div><a href="#">자세히 보기</a></div>
+                        <div class="business4"><div class=""></div><a href="#">자세히 보기</a></div>
+                        <div class="business5"><div class=""></div><a href="#">자세히 보기</a></div>
+                        <div class="business6"><div class=""></div><a href="#">자세히 보기</a></div>
+                        <div class="business7"><div class=""></div><a href="#">자세히 보기</a></div>
+                        <div class="business8"><div class=""></div><a href="#">자세히 보기</a></div>
+                    </div>
+                </div>  
+            </div>
+
+
+
+
+
+<!-- *******************************여섯번째 슬라이드 시작************************* -->  
+
+
+    <div class="section" id="section5">
+        <div class="inner">
+        <h1>BRANDS</h1>
+        <div class="brands">
+            <div class="brandLogo1"></div>
+            <div class="brandLogo2"></div>
+            <div class="brandLogo3"></div>
+            <div class="brandLogo4"></div>
+            <div class="brandLogo5"></div>
+            <div class="brandLogo6"></div>
+            <div class="brandLogo7"></div>
+            <div class="brandLogo8"></div>
+            <div class="brandLogo9"></div>
+            <div class="brandLogo10"></div>
+            <div class="brandLogo11"></div>
+            <div class="brandLogo12"></div>
+            <div class="brandLogo13"></div>
+            <div class="brandLogo14"></div>
+            <div class="brandLogo15"></div>
+            <div class="brandLogo16"></div>
+            <div class="brandLogo17"></div>
+            <div class="brandLogo18"></div>
+        </div>
+        </div>
+
+<!-- *************************************푸터********************************** -->
+
+<div class="footer">
+    <div class="container">
+        <ul class="brand">
+            <li class="brImg br1"></li>
+            <li class="brImg br2"></li>
+            <li class="brImg br3"></li>
+            <li class="brImg br4"></li>
+            <li class="brImg br5"></li>
+            <li class="brImg br6"></li>
+            <li class="brImg br7"></li>
+            <li class="brImg br8"></li>
+            <li class="brImg br9"></li>
+        </ul>
+        <div class="ftInner">
+            <div class="ftLogo"><a href="#"></a></div>
+            <div class="service">
+                <a href="#">고객센터</a>
+                <a href="#">이용약관</a>
+                <a href="#">멤버십 이용 약관</a>
+                <a href="#">금액권 및 제품교환권 이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">사이트맵</a>
+                <a href="#">영상정보처리기기운영·관리방침</a>
+                <a href="#">이메일무단수집금지</a>
+                <p class="adress">
+                    서울시 중구 소공로 106 <span> </span> 대표이사 한채양 <span> </span> T. 02-771-0500<br>
+                    사업자등록번호 104-81-27386 통신판매신고번호 중구 0623호<br>
+                    © 2020 JOSUN HOTELS & RESORTS Co. All rights reserved. 
+                </p>
+            </div>
+            <div class="siteSns">
+                <div class="familySite"> FAMILY SITES <div class="arrow"></div>
+                    <ul class="familySites">
+                        <li>신세계그룹 인사이드</li>
+                        <li>SSG.COM</li>
+                        <li>신세계TV쇼핑</li>
+                        <li>신세계백화점</li>
+                        <li>이마트</li>
+                        <li>이마트 에브리데이</li>
+                        <li>이마트24</li>
+                        <li>까사미아</li>
+                        <li>신세계인터내셔날</li>
+                        <li>신세계푸드</li>
+                        <li>신세계건설</li>
+                        <li>신세계I&C</li>
+                        <li>스타벅스커피코리아</li>
+                        <li>신세계면세점</li>
+                        <li>신세계사이먼</li>
+                        <li>신세계L&B</li>
+                        <li>신세계 프라퍼티</li>
+                        <li>신세계센트럴시티</li>
+                    </ul>
+            </div>
+                <ul class="snsBox">
+                    <li class="J"><a href="#"></a></li>
+                    <li class="cha"><a href="#"></a></li>
+                    <li class="ins"><a href="#"></a></li>
+                    <li class="yt"><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+
+
+
+        
+
+</body>
+</html>

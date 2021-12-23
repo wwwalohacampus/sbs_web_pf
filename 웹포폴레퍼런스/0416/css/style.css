@@ -1,0 +1,155 @@
+/* header */
+.header{background-color: #fff; height: 100px; position: relative; border-bottom: 1px solid #d7d7d7; z-index: 200;}
+.mainH{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header > .in{
+    height: 100%; display: flex; justify-content: space-between;
+    align-items: center; 
+    /* width: 1840px;s */
+}
+/* logo */
+.logo > a{ display: block; width: 225px; height: 62px; background: url(../img/logo-color.svg)no-repeat top left/contain;}
+
+/* gnb */
+.header > .in > div{display: flex; height: 100%; align-items: center;}
+.header-gnb{height: 100%;}
+.header-gnb > ul{display: flex; height: 100%; position: relative;}
+.header-gnb > ul > li{height: 100%; position: relative;}
+.header-gnb > ul > li > a{display: flex; align-items: center; font-size: 18px; font-weight: 600; padding: 35px;}
+.header-gnb > ul > li > a span{padding: 0 3px; font-size: 18px; position: relative;}
+
+.gnb-sub{position: absolute; top: 100px; left: 0; height: 270px; width: 100%; display: none; }
+.gnb-sub > li{text-align: center;}
+.gnb-sub > li > a{display: block; font-size: 16px; padding: 10px 0;}  
+
+/* util */
+
+.header-size{display: flex; align-items: center;}
+.search{width: 29px;}
+.search img{width: 100%;}
+.header-lang{display: flex; margin-left: 18px;}
+.header-lang li{margin-right: 18px;}
+.header-lang li a{font-size: 16px; font-weight: 600;}
+.header-size span{margin: 0 15px; font-size: 16px; font-weight: 600;}
+
+/* main */
+/* .in {
+    position: relative;
+    width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+} */
+
+/* fullpage */
+.fullpage{height: 100vh !important; overflow: hidden; }
+.section{position: relative;}
+.full02{padding: 400px 0 200px;}
+.full03{padding: 200px 0;}
+.full04{padding: 200px 0;}
+.full05{padding: 200px 0;}
+/* full01 */
+.full01{}
+.home{position: absolute;  z-index: 100; right: 0; bottom: 0; }
+.home:after{clear: both; display: block; content: ''}
+.home a{ padding: 20px 30px;background: #000; color: #cfcfcf; transition: all 0.4s;}
+.home a:hover{color: yellow;}
+/* .full01 > .in{height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;} */
+.text{
+    position: absolute;
+    z-index: 100;
+    left: 10%;
+    bottom: 20%;
+}
+.text p{
+   font-size: 18px;
+   font-weight: 400;
+   margin-top: 35px;
+   line-height: 1.8;
+}
+.box{
+    margin-left: 200px;
+    transform: translate(25%,-10%);
+    width: 100%;
+	background:#fff;
+}
+.video video{
+ width: 80%;
+}
+/* full02 */
+.full02 > .in{display: flex; height: 100%; justify-content: center; align-items: center;}
+.inner{display: flex; justify-content: space-around; align-items: center;}
+.memory-txt{margin-right: 100px;}
+.memory-txt h2{font-size: 55px; margin-top: 20px;}
+.memory-txt p{font-size: 18px; margin-top: 10px;}
+.memory-txt a p{font-size: 18px; margin-top: 100px;}
+.slide-txt strong{font-size: 30px;}
+.slide-txt p{font-size: 18px;}
+.slide-txt span{font-size: 16px;}
+/* full02 -swiper */
+.swiper{
+    width: 732px; height: 700px;
+}
+/* full03 - swiper */
+.full03 > .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.full03 > .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+.full03 >  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.full03 >  .swiper-slide {
+    width: 80%;
+  }
+
+.full03 > .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+.full03 > .swiper-slide:nth-child(3n) {
+    width: 40%;
+  }
+/* full03 */
+.full03 .in{display: flex; justify-content: flex-end;}
+.full03 .swiper{margin-left: 200px;}
+.full03-slide .swiper-slide span {
+	font-size: 1.7rem;
+	padding:0 7px;
+    height: 47px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    line-height: 47px;
+    display: block;
+	z-index:2;
+}
