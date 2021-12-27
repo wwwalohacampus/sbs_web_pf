@@ -1,38 +1,44 @@
 .swiper {
-    width: 100vw;
-    height: 300px;
+    width: 600px;
+    height: 600px;
+    margin: 100px auto;
+}
+
+.swiper .swiper-slide img {  width: 100%; height: 100%;}
+
+
+/* 페이지네이션 커스텀 */
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
     text-align: center;
-    line-height: 300px;
-    font-size: 40px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* 페이지네이션 - 활성화 버튼 */
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: pink;
 }
 
 
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-
-    border: 1px solid gray;
+/* 네비게이션 화살표 커스텀 */
+.swiper-button-prev {
+    color: pink;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.swiper-button-prev::after {
+    font-size: 20px;
+}
+
+.swiper-button-next {
+    color: pink;
+}
+
+.swiper-button-next::after {
+    font-size: 20px;
 }
