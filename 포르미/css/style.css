@@ -181,15 +181,147 @@ section.visual {
 
 /*  섹션 best - 인기상품 영역 */
 section.best { }
-section.best .title { }
+section.best .title {
+    margin-top: 80px;
+}
+section.best .title h2 { 
+    font-weight: 300; 
+    font-size: 26px;
+    line-height: 38px;
+    text-align: center;
+}
+
+section.best .title p {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+section.best .title p b {}
+
+section.best .title hr {
+    display: block;
+    width: 50px;
+    border-bottom: 4px solid var(--primary-color);
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
 section.best .slide { }
-section.best .slide .product-slide { }
-section.best .card { }
-section.best .card .img-box  { }
-section.best .card .info-box  { }
-section.best .card .info-box .proudct-title  { }
+
+section.best .slide .product-slide {
+    padding: 0 55px;
+}
+section.best .card {
+}
+/* 카드 - 상단 이미지 영역 */
+section.best .card .img-box  { 
+    width: 250px;
+    height: 250px;
+}
+
+section.best .card .img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 카드 - 하단 내용 영역 */
+section.best .card .info-box  { 
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+ }
+/* 카드 - 상품이름 */
+section.best .card .info-box .proudct-title h2  { 
+    font-weight: 600;
+    color: #302e28;
+    font-size: 1.3rem;
+    height: 2.3em;
+    line-height: 1.2em;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+/* 카드 - 해시태그(#) */
+section.best .card .info-box .proudct-title p {
+    color: var(--gray-color);
+    height: 100px;
+}
+
 section.best .card .info-box .product-info  { }
-section.best .card .info-box .product-info .sale  { }
+section.best .card .info-box .product-info .sale  {
+    padding: 0.1rem 0.6rem;
+    background-color: var(--second-color);
+    border-radius: 4px;
+    color: var(--white-color);
+    font-weight: 300;
+    letter-spacing: -0.5px;
+ }
 section.best .card .info-box .product-info .price-box  { }
-section.best .card .info-box .product-info .price-box .price  { }
-section.best .card .info-box .product-info .price-box .discount  { }
+/* 카드 - 가격 */
+section.best .card .info-box .product-info .price-box .price  {
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    color: var(--gray-color);
+}
+/* 카드 - 할인가격 */
+section.best .card .info-box .product-info .price-box .discount  {
+    font-size: 1.3rem;
+    color: #302e28;
+}
+
+/* 슬릭 - 화살표 커스텀 */
+.slick-prev, .slick-next {
+    width: 50px;
+    height: 50px;
+}
+
+/* 왼쪽 화살표 */
+.slick-prev {
+}
+
+/* 오른쪽 화살표 */
+.slick-next {
+    transform: rotate(180deg) translateY(22px);
+    right: 0;
+}
+
+/* 화살표 - 마우스 올렸을 때 */
+.slick-prev:hover, .slick-next:hover {
+    
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 40px;
+    content: url(../img/arrow_s.png);
+    color: transparent;
+}
+
+/* 섹션 intro - 상품소개 */
+section.intro {
+    width: 100% !important;
+    height: 2000px;
+    margin-top: 200px;
+    position: relative;
+    background: url(../img/main_bg.jpg) center center no-repeat fixed;
+    background-size: cover;
+    color: var(--black-color);
+}
+/* 섹션 intro - 멀티슬라이드 */
+section.intro .multi-slide {
+    position: relative;
+    top: -150px;
+    width: 1090px;
+    height: 720px;
+    margin: 40px auto 120px;
+    overflow: hidden;
+    background-color: var(--white-color);
+    box-sizing: 0 0 20px var(--gray-color);
+    border: 1px solid black;
+}
+section.intro .multi-slide .left-box {}
+section.intro .multi-slide .center-box {}
+section.intro .multi-slide .top-box {}
+section.intro .multi-slide .bottom-box {}
+
+/* 섹션 intro - 6칸 브랜드 소개 영역 */
+section.intro .info {}
