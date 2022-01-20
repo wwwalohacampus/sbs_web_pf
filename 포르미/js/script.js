@@ -44,5 +44,28 @@ $(function() {
         pauseOnHover: true,             // 호버 시, 자동재생 멈춤
     })
 
+    // 3초마다 멀티 슬라이드 타이머 적용
+    let slide = setInterval(multSlide, 3000)
 
 })
+
+// 슬라이드
+let index = 0
+function multSlide() {
+    index++
+
+    // 상품 제목
+    $('.left-box .title ul li').removeClass('active')
+    $('.left-box .title ul li:nth-child(' + index + ')').addClass('active')
+
+    // 상품 설명
+    $('.left-box .info ul li').removeClass('active')
+    $('.left-box .info ul li:nth-child(' + index + ')').addClass('active')
+
+    // 상품 이미지
+    $('.left-box .img ul li').removeClass('active')
+    $('.left-box .img ul li:nth-child(' + index + ')').addClass('active')
+
+    if( index == 4 )
+        index = 0
+}
