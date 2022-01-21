@@ -463,9 +463,176 @@ section.intro .multi-slide .left-box .img ul li.active {
     90% { left: 0; }
 }
 
-section.intro .multi-slide .center-box {}
-section.intro .multi-slide .top-box {}
-section.intro .multi-slide .bottom-box {}
+section.intro .multi-slide .center-box {
+    position: relative;
+    width: 300px;
+    height: 740px;
+    float: left;
+    overflow: hidden;
+}
+
+section.intro .multi-slide .center-box ul {}
+section.intro .multi-slide .center-box ul li {
+    position: absolute;
+    width: 300px;
+    height: 740px;
+    left: -300px;
+    transition: left 0.5s ease;
+    animation: centerSlide 0.5s ease;
+}
+
+section.intro .multi-slide .center-box ul li.active {
+    left: 0;
+}
+
+@keyframes centerSlide {
+    0% { left: -300px;}
+    90% { left: 0; }
+}
+
+
+section.intro .multi-slide .top-box {
+    position: relative;    
+    width: 290px;
+    height: 380px;
+    float: left;
+}
+
+section.intro .multi-slide .top-box ul {}
+section.intro .multi-slide .top-box ul li {
+    position: absolute;
+    width: 290px;
+    height: 380px;
+    left: 290px;
+    transition: left 0.5s ease;
+    animation: topSlide 0.5s ease;
+}
+
+section.intro .multi-slide .top-box ul li.active {
+    left: 0;
+}
+
+@keyframes topSlide {
+    0% { left: 290px;}
+    90% { left: 0; }
+}
+
+
+section.intro .multi-slide .bottom-box {
+    position: relative;
+    width: 290px;
+    height: 360px;
+    float: left;
+}
+
+section.intro .multi-slide .bottom-box .title {
+    position: absolute;
+    width: 132px;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    letter-spacing: -1px;
+    overflow: hidden;
+}
+section.intro .multi-slide .bottom-box .title ul {
+    height: 24px;
+    overflow: hidden;
+}
+section.intro .multi-slide .bottom-box .title ul li {
+    position: absolute;
+    top: 24px;
+    transition: top 0.5s ease;
+    animation: avgSlide 0.5s ease;
+    background-color: white;
+}
+
+@keyframes avgSlide {
+    0% { top: 24px; }
+    90% { top: 0; }
+}
+
+section.intro .multi-slide .bottom-box .title ul li.active {
+    top: 0;
+}
+
+section.intro .multi-slide .bottom-box .kcal {
+    position: absolute;
+    width: 175px;
+    top: 130px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -4px;
+    overflow: hidden;
+}
+section.intro .multi-slide .bottom-box .kcal ul {
+    height: 66px;
+    overflow: hidden;
+}
+section.intro .multi-slide .bottom-box .kcal ul li {
+    position: absolute;
+    top: -66px;
+    transition: top 0.5s ease;
+    animation: kcalSlide 0.5s ease;
+    background-color: white;
+}
+
+@keyframes kcalSlide {
+    0% { top: -66px;}
+    90% { top: 0; }
+}
+
+section.intro .multi-slide .bottom-box .kcal ul li.active {
+    top: 0;
+}
+
+section.intro .multi-slide .bottom-box .gram {
+    position: absolute;
+    width: 125px;
+    top: 190px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -4px;
+    overflow: hidden;
+}
+section.intro .multi-slide .bottom-box .gram ul {
+    height: 72px;
+    overflow: hidden;
+}
+section.intro .multi-slide .bottom-box .gram ul li {
+    position: absolute;
+    top: 72px;
+    transition: top 0.5s ease;
+    animation: gramSlide 0.5s ease;
+    background-color: white;
+}
+section.intro .multi-slide .bottom-box .gram ul li.active {
+    top: 0;
+}
+
+@keyframes gramSlide {
+    0% { top: 72px; }
+    90% { top: 0; }
+}
+
+
+
 
 /* 섹션 intro - 6칸 브랜드 소개 영역 */
-section.intro .info {}
+section.intro .info {
+    position: relative;
+    width: 1090px;
+    height: 720px;
+    margin: 40px auto 120px;
+    background-color: white;
+    box-shadow: 0 0 20px var(--gray-color);
+}
