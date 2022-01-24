@@ -8,3 +8,8 @@ a img {border: none;}
 li {list-style: none;}
 address, em, i {font-style: normal;}
 
+.clear {
+    content: '';
+    display: block;
+    clear: both;
+}
